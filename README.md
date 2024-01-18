@@ -81,6 +81,6 @@ Extra points if you find bugs / corrections this TD can benefit from, and submit
 
 ## TD addresses
 
-- Points contracts `0x70dC70DC5DEcf3828Cd11ac559b3Ad76E7eA7b2d`
-- DummyToken `0x835e5DCB9c2e34Dd31d9C40090D5c2287C701888`
-- Evaluator `0x5F1226F073d1b12C554780eeAa3bc12AF93dC449`
+- Points contracts `0xcD41e953423c795BF1b4a68c13ee4A2e6B99C7f3`
+- DummyToken `0x99a4859adeD0b841ebFAA9E686D681091A92A263`
+- Evaluator `0x88B8B21531BB27Dd6b622aE07487D6f65DAD3848`
