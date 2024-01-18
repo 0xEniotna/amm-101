@@ -33,7 +33,7 @@ Your objective is to gather as many TD-AMM-101 points as possible. Please note :
 - Create a `.env` file that contains private key for deployment, an infura API key.
 - To deploy a contract, configure a script in the [scripts folder](script). Look at the way the TD is deployed and try to iterate
 - Test your deployment locallly with `anvil` and `forge script script/your-script.s.sol --fork-url http://localhost:8545 --broadcast -vvvv`
-- Deploy on Sepolia `forge script script/deployTD.s.sol --rpc-url $sepolia_url --broadcast -vvvv `
+- Deploy on Sepolia `forge script script/Counter.s.sol --fork-url $GOERLI --broadcast -vvvv `
 
 ## Points list
 
@@ -47,16 +47,16 @@ Your objective is to gather as many TD-AMM-101 points as possible. Please note :
 
 ### ERC20 basics
 
-- Call `ex6a_getTickerAndSupply()` in the evaluator contract to receive a random ticker for your ERC20 token, as well as an initial token supply. You can read your assigned ticker and supply in `Evaluator.sol` by calling getters `readTicker()` and `readSupply()` (2 pt)
+- Call `ex3a_getTickerAndSupply()` in the evaluator contract to receive a random ticker for your ERC20 token, as well as an initial token supply. You can read your assigned ticker and supply in `Evaluator.sol` by calling getters `readTicker()` and `readSupply()` (2 pt)
 - Create an ERC20 token contract with the proper ticker and supply
 - Deploy it to the goerli testnet
 - Call `submitErc20()` in the Evaluator to configure the contract you want evaluated (Previous 3 points are attributed at that step)
-- Call `ex6b_testErc20TickerAndSupply()` in the evaluator to receive your points (2 pts)
+- Call `ex3b_testErc20TickerAndSupply()` in the evaluator to receive your points (2 pts)
 
 ### Uniswap basics - again
 
 - Create a uniswap pool for you token and add liquidity to it
-- Call `ex7_tokenIsTradableOnUniswap` to show your token is tradable on uniswap (5 pts)
+- Call `ex4_tokenIsTradableOnUniswap` to show your token is tradable on uniswap (5 pts)
 
 ### Uniswap integration
 
@@ -64,13 +64,13 @@ You will need to interact with UniswapV2Router02 in order to complete this part.
 
 - Create a contract that can swap tokens in Uniswap in the WETH/Your token pool
 - Submit your contract address using `submitExercice()` (repeat as needed)
-- Prove your contract work by calling `ex8_contractCanSwapVsEth()` in the evaluator (1pts)
+- Prove your contract work by calling `ex5_contractCanSwapVsEth()` in the evaluator (1pts)
 - Create a contract that can swap tokens in Uniswap in the dummyToken/Your token pool
-- Prove your contract work by calling `ex9_contractCanSwapVsDummyToken()` in the evaluator (2pts)
+- Prove your contract work by calling `ex6_contractCanSwapVsDummyToken()` in the evaluator (2pts)
 - Create a contract that can deposit tokens in Uniswap in the WETH/Your token pool
-- Prove your contract work by calling `ex10_contractCanProvideLiquidity()` in the evaluator (2pts)
+- Prove your contract work by calling `ex7_contractCanProvideLiquidity()` in the evaluator (2pts)
 - Create a contract that can withdraw tokens in Uniswap from the WETH/Your token pool
-- Prove your contract work by calling `ex11_contractCanWithdrawLiquidity()` in the evaluator (2pts)
+- Prove your contract work by calling `ex8_contractCanWithdrawLiquidity()` in the evaluator (2pts)
 
 ### Extra points
 
@@ -81,5 +81,6 @@ Extra points if you find bugs / corrections this TD can benefit from, and submit
 
 ## TD addresses
 
-- Points contracts `0xC23563f0D0b4cD110b561DaBd707539AFf99a42C`
-- Evaluator `0xF468D9B2d1D901B01147179baF8526de39a59d6B`
+- Points contracts `0x70dC70DC5DEcf3828Cd11ac559b3Ad76E7eA7b2d`
+- DummyToken `0x835e5DCB9c2e34Dd31d9C40090D5c2287C701888`
+- Evaluator `0x5F1226F073d1b12C554780eeAa3bc12AF93dC449`
