@@ -40,7 +40,7 @@ Your objective is to gather as many TD-AMM-101 points as possible. Please note :
 ### Uniswap basics
 
 - Find the dummyToken address by calling `dummyToken()` on the Evaluator
-- Buy some units of dummyToken on Uniswap. You can do this using their website
+- Buy some units of dummyToken on Uniswap. You can do this using their website. Please let some tokens to the others.
 - Prove that you own these tokens by calling `ex1_showIHaveTokens()` (2 pts)
 - Provide liquidity to the Weth - dummyToken pool on Uniswap
 - Prove that you own these tokens by calling `ex2_showIProvidedLiquidity()` (2 pts)
